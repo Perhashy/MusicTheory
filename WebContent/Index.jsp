@@ -7,6 +7,7 @@
 <title>music theory</title>
 </head>
 <body>
+	<h2>キーから選択</h2>
 	<form action="Scale.jsp" method="POST">
 		<select name="scale">
 			<option value="0">C</option>
@@ -25,8 +26,9 @@
 			<option value="13">B</option>
 			<option value="14">C♭</option>
 		</select>
-		<input type="submit">
+		<input type="submit" value="選択">
 	</form>
+	<h2>調号から選択</h2>
 	<form action="Scale.jsp" method="POST">
 		<select name="scale">
 			<option value="0"></option>
@@ -45,7 +47,7 @@
 			<option value="8">♭♭♭♭♭♭</option>
 			<option value="14">♭♭♭♭♭♭♭</option>
 		</select>
-		<input type="submit">
+		<input type="submit" value="選択">
 	</form>
 </body>
 </html>
