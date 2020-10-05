@@ -29,8 +29,8 @@
 <title>スケール一覧</title>
 </head>
 <body>
-	<h2>key = <%= scales[scale][0 ]%></h2>
-	<h2>メジャースケール</h2>
+	<h2>key = <%= scales[scale][0]%></h2>
+	<h2><%= scales[scale][0]%>メジャースケール</h2>
 	<table border="1">
 		<tr>
 			<th>Ⅰ</th>
@@ -61,7 +61,7 @@
 			<td>D</td>
 		</tr>
 	</table>
-	<h2>マイナースケール</h2>
+	<h2><%= scales[scale][5]%>マイナースケール</h2>
 	<table border="1">
 		<tr>
 			<th>Ⅰ</th>
