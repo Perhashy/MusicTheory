@@ -3,21 +3,21 @@
  
  <%
  	String[][] scales = new String[15][];
- 	scales[0] = new String[] {"C", "Dm", "Em", "F", "G", "Am", "Bm♭5"};
- 	scales[1] = new String[] {"C♯", "D♯m", "E♯m", "F♯", "G♯", "A♯m", "B♯m♭5"};
- 	scales[2] = new String[] {"D♭", "E♭m", "Fm", "G♭", "A♭", "B♭m", "Cm♭5"};
- 	scales[3] = new String[] {"D", "Em", "F♯m", "G", "A", "Bm", "C♯m♭5"};
-	scales[4] = new String[] {"E♭", "Fm", "Gm", "A♭", "B♭", "Cm", "Dm♭5"};
-	scales[5] = new String[] {"E", "F♯m", "G♯m", "A", "B", "C♯m", "D♯m♭5"};
-	scales[6] = new String[] {"F", "Gm", "Am", "B♭", "C", "Dm", "Em♭5"};
-	scales[7] = new String[] {"F♯", "G♯m", "A♯m", "B", "C♯", "D♯m", "E♯m♭5"};
-	scales[8] = new String[] {"G♭", "A♭m", "B♭m", "C♭", "D♭", "E♭m", "Fm♭5"};
-	scales[9] = new String[] {"G", "Am", "Bm", "C", "D", "Em", "F♯m♭5"};
-	scales[10] = new String[] {"A♭", "B♭m", "Cm", "D♭", "E♭", "Fm", "Gm♭5"};
-	scales[11] = new String[] {"A", "Bm", "C♯m", "D", "E", "F♯m", "G♯m♭5"};
-	scales[12] = new String[] {"B♭", "Cm", "Dm", "E♭", "F", "Gm", "Am♭5"};
-	scales[13] = new String[] {"B", "C♯m", "D♯m", "E", "F♯", "G♯m", "A♯m♭5"};
-	scales[14] = new String[] {"C♭", "D♭m", "E♭m", "F♭", "G♭", "A♭m", "B♭m♭5"};
+ 	scales[0] = new String[] {"C", "D", "E", "F", "G", "A", "B"};
+ 	scales[1] = new String[] {"C♯", "D♯", "E♯", "F♯", "G♯", "A♯", "B♯"};
+ 	scales[2] = new String[] {"D♭", "E♭", "F", "G♭", "A♭", "B♭", "C"};
+ 	scales[3] = new String[] {"D", "E", "F♯", "G", "A", "B", "C♯"};
+	scales[4] = new String[] {"E♭", "F", "G", "A♭", "B♭", "C", "D"};
+	scales[5] = new String[] {"E", "F♯", "G♯", "A", "B", "C♯", "D♯"};
+	scales[6] = new String[] {"F", "G", "A", "B♭", "C", "D", "E"};
+	scales[7] = new String[] {"F♯", "G♯", "A♯", "B", "C♯", "D♯", "E♯"};
+	scales[8] = new String[] {"G♭", "A♭", "B♭", "C♭", "D♭", "E♭", "F"};
+	scales[9] = new String[] {"G", "A", "B", "C", "D", "E", "F♯"};
+	scales[10] = new String[] {"A♭", "B♭", "C", "D♭", "E♭", "F", "G"};
+	scales[11] = new String[] {"A", "B", "C♯", "D", "E", "F♯", "G♯"};
+	scales[12] = new String[] {"B♭", "C", "D", "E♭", "F", "G", "A"};
+	scales[13] = new String[] {"B", "C♯", "D♯", "E", "F♯", "G♯", "A♯"};
+	scales[14] = new String[] {"C♭", "D♭", "E♭", "F♭", "G♭", "A♭", "B♭"};
  	
  	String postScale = request.getParameter("scale");
  	int scale = Integer.parseInt(postScale);
@@ -44,12 +44,12 @@
 		<tr>
 			<!-- このtrの内容はは配列を用意して表示 -->
 			<td><%= scales[scale][0] %></td>
-			<td><%= scales[scale][1] %></td>
-			<td><%= scales[scale][2] %></td>
+			<td><%= scales[scale][1] %>m</td>
+			<td><%= scales[scale][2] %>m</td>
 			<td><%= scales[scale][3] %></td>
 			<td><%= scales[scale][4] %></td>
-			<td><%= scales[scale][5] %></td>
-			<td><%= scales[scale][6] %></td>
+			<td><%= scales[scale][5] %>m</td>
+			<td><%= scales[scale][6] %>m♭5</td>
 		</tr>
 		<tr>
 			<td>T</td>
@@ -74,11 +74,11 @@
 		</tr>
 		<tr>
 			<!-- このtrの内容はは配列を用意して表示 -->
-			<td><%= scales[scale][5] %></td>
-			<td><%= scales[scale][6] %></td>
+			<td><%= scales[scale][5] %>m</td>
+			<td><%= scales[scale][6] %>m♭5</td>
 			<td><%= scales[scale][0] %></td>
-			<td><%= scales[scale][1] %></td>
-			<td><%= scales[scale][2] %></td>
+			<td><%= scales[scale][1] %>m</td>
+			<td><%= scales[scale][2] %>m</td>
 			<td><%= scales[scale][3] %></td>
 			<td><%= scales[scale][4] %></td>
 		</tr>
