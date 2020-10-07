@@ -109,5 +109,6 @@
 			<td>S</td>
 		</tr>
 	</table>
+	<input type="button" onclick="history.back()" value="戻る">
 </body>
 </html>
