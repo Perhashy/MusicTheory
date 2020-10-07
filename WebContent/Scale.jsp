@@ -42,7 +42,6 @@
 			<th>Ⅶ</th>
 		</tr>
 		<tr>
-			<!-- このtrの内容はは配列を用意して表示 -->
 			<td><%= scales[scale][0] %></td>
 			<td><%= scales[scale][1] %>m</td>
 			<td><%= scales[scale][2] %>m</td>
@@ -50,6 +49,15 @@
 			<td><%= scales[scale][4] %></td>
 			<td><%= scales[scale][5] %>m</td>
 			<td><%= scales[scale][6] %>m♭5</td>
+		</tr>
+		<tr>
+			<td><%= scales[scale][0] %>,<%= scales[scale][2] %>,<%= scales[scale][4] %></td>
+			<td><%= scales[scale][1] %>,<%= scales[scale][3] %>,<%= scales[scale][5] %></td>
+			<td><%= scales[scale][2] %>,<%= scales[scale][4] %>,<%= scales[scale][6] %></td>
+			<td><%= scales[scale][3] %>,<%= scales[scale][5] %>,<%= scales[scale][0] %></td>
+			<td><%= scales[scale][4] %>,<%= scales[scale][6] %>,<%= scales[scale][1] %></td>
+			<td><%= scales[scale][5] %>,<%= scales[scale][0] %>,<%= scales[scale][2] %></td>
+			<td><%= scales[scale][6] %>,<%= scales[scale][1] %>,<%= scales[scale][3] %></td>
 		</tr>
 		<tr>
 			<td>T</td>
@@ -61,7 +69,7 @@
 			<td>D</td>
 		</tr>
 	</table>
-	<h2><%= scales[scale][5]%>マイナースケール</h2>
+	<h2><%= scales[scale][5]%>ナチュラルマイナースケール</h2>
 	<table border="1">
 		<tr>
 			<th>Ⅰ</th>
@@ -73,7 +81,6 @@
 			<th>Ⅶ</th>
 		</tr>
 		<tr>
-			<!-- このtrの内容はは配列を用意して表示 -->
 			<td><%= scales[scale][5] %>m</td>
 			<td><%= scales[scale][6] %>m♭5</td>
 			<td><%= scales[scale][0] %></td>
@@ -82,6 +89,16 @@
 			<td><%= scales[scale][3] %></td>
 			<td><%= scales[scale][4] %></td>
 		</tr>
+		<tr>
+			<td><%= scales[scale][5] %>,<%= scales[scale][0] %>,<%= scales[scale][2] %></td>
+			<td><%= scales[scale][6] %>,<%= scales[scale][1] %>,<%= scales[scale][3] %></td>
+			<td><%= scales[scale][0] %>,<%= scales[scale][2] %>,<%= scales[scale][4] %></td>
+			<td><%= scales[scale][1] %>,<%= scales[scale][3] %>,<%= scales[scale][5] %></td>
+			<td><%= scales[scale][2] %>,<%= scales[scale][4] %>,<%= scales[scale][6] %></td>
+			<td><%= scales[scale][3] %>,<%= scales[scale][5] %>,<%= scales[scale][0] %></td>
+			<td><%= scales[scale][4] %>,<%= scales[scale][6] %>,<%= scales[scale][1] %></td>
+		</tr>
+		
 		<tr>
 			<td>T</td>
 			<td>SD</td>
